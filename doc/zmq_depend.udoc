@@ -1,0 +1,3 @@
+
+
+ZMQ on windows depends Advapi32.lib

@@ -1,0 +1,12 @@
+#!/bin/sh
+
+#This script starts pitzepicsL_server program.
+
+#export LD_LIBRARY_PATH=/opt/products/root64/5.14.00/lib64:/afs/ifh.de/group/pitz/doocs/develop/kalantar/programs/cpp/works/from_levon/levonh/@sys/lib:$LD_LIBRARY_PATH
+#ldd /doocs/bin/bindegaussergui_lin64_work | grep libdegauss
+#LD_LIBARRY_PATH=/local/lib:$LD_LIBRARY_PATH
+#export LD_LIBRARY_PATH
+
+export LD_LIBRARY_PATH=/afs/ifh.de/group/pitz/doocs/zmq/lib
+
+./test1_zmq "$@"
