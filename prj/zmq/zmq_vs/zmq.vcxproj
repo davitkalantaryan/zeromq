@@ -871,6 +871,7 @@
     <None Include="..\..\..\contrib\libzmq\src\platform.hpp.in" />
     <None Include="..\..\..\contrib\libzmq\src\version.rc.in" />
     <None Include="..\..\..\doc\zmq_depend.udoc" />
+    <None Include="..\..\..\msbuild_all.bat" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

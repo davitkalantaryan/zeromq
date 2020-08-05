@@ -25,6 +25,9 @@
     <Filter Include="Header Files\spec">
       <UniqueIdentifier>{94907042-b3ef-4d7b-aa59-3269df56a1b5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="files">
+      <UniqueIdentifier>{279de28d-0050-426a-b5f3-321185994297}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\contrib\libzmq\src\address.cpp">
@@ -884,5 +887,8 @@
     <None Include="..\..\..\.gitignore" />
     <None Include="..\..\..\contrib\libzmq\src\libzmq.vers" />
     <None Include="..\..\..\contrib\libzmq\src\version.rc.in" />
+    <None Include="..\..\..\msbuild_all.bat">
+      <Filter>files</Filter>
+    </None>
   </ItemGroup>
 </Project>
