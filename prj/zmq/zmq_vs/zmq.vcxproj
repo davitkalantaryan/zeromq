@@ -140,160 +140,88 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\common\common_vs\sys_common_base.props" />
-    <Import Project="..\..\common\common_vs\win32\sys.props" />
-    <Import Project="..\..\common\common_vs\sys_common.props" />
-    <Import Project="..\..\common\common_vs\dll_common.props" />
+    <Import Project="..\..\common\common_vs\libzmq_common.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDbg|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\common\common_vs\sys_common_base.props" />
-    <Import Project="..\..\common\common_vs\win32\sys.props" />
-    <Import Project="..\..\common\common_vs\sys_common.props" />
-    <Import Project="..\..\common\common_vs\dll_common.props" />
+    <Import Project="..\..\common\common_vs\libzmq_common.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\common\common_vs\sys_common_base.props" />
-    <Import Project="..\..\common\common_vs\win32\sys.props" />
-    <Import Project="..\..\common\common_vs\sys_common.props" />
-    <Import Project="..\..\common\common_vs\dll_common.props" />
+    <Import Project="..\..\common\common_vs\libzmq_common.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\common\common_vs\sys_common_base.props" />
-    <Import Project="..\..\common\common_vs\x64\sys.props" />
-    <Import Project="..\..\common\common_vs\sys_common.props" />
-    <Import Project="..\..\common\common_vs\dll_common.props" />
+    <Import Project="..\..\common\common_vs\libzmq_common.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDbg|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\common\common_vs\sys_common_base.props" />
-    <Import Project="..\..\common\common_vs\x64\sys.props" />
-    <Import Project="..\..\common\common_vs\sys_common.props" />
-    <Import Project="..\..\common\common_vs\dll_common.props" />
+    <Import Project="..\..\common\common_vs\libzmq_common.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\common\common_vs\sys_common_base.props" />
-    <Import Project="..\..\common\common_vs\arm\sys.props" />
-    <Import Project="..\..\common\common_vs\sys_common.props" />
-    <Import Project="..\..\common\common_vs\dll_common.props" />
+    <Import Project="..\..\common\common_vs\libzmq_common.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\common\common_vs\sys_common_base.props" />
-    <Import Project="..\..\common\common_vs\arm\sys.props" />
-    <Import Project="..\..\common\common_vs\sys_common.props" />
-    <Import Project="..\..\common\common_vs\dll_common.props" />
+    <Import Project="..\..\common\common_vs\libzmq_common.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDbg|ARM'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\common\common_vs\sys_common_base.props" />
-    <Import Project="..\..\common\common_vs\arm\sys.props" />
-    <Import Project="..\..\common\common_vs\sys_common.props" />
-    <Import Project="..\..\common\common_vs\dll_common.props" />
+    <Import Project="..\..\common\common_vs\libzmq_common.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDbg|ARM64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\common\common_vs\sys_common_base.props" />
-    <Import Project="..\..\common\common_vs\arm\sys.props" />
-    <Import Project="..\..\common\common_vs\sys_common.props" />
-    <Import Project="..\..\common\common_vs\dll_common.props" />
+    <Import Project="..\..\common\common_vs\libzmq_common.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\common\common_vs\sys_common_base.props" />
-    <Import Project="..\..\common\common_vs\x64\sys.props" />
-    <Import Project="..\..\common\common_vs\sys_common.props" />
-    <Import Project="..\..\common\common_vs\dll_common.props" />
+    <Import Project="..\..\common\common_vs\libzmq_common.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\common\common_vs\sys_common_base.props" />
-    <Import Project="..\..\common\common_vs\arm\sys.props" />
-    <Import Project="..\..\common\common_vs\sys_common.props" />
-    <Import Project="..\..\common\common_vs\dll_common.props" />
+    <Import Project="..\..\common\common_vs\libzmq_common.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\common\common_vs\sys_common_base.props" />
-    <Import Project="..\..\common\common_vs\arm\sys.props" />
-    <Import Project="..\..\common\common_vs\sys_common.props" />
-    <Import Project="..\..\common\common_vs\dll_common.props" />
+    <Import Project="..\..\common\common_vs\libzmq_common.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <TargetName>$(ProjectName).4.3.3</TargetName>
-    <OutDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\dll\</OutDir>
-    <IntDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\.objects\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDbg|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <TargetName>$(ProjectName).4.3.3</TargetName>
-    <OutDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\dll\</OutDir>
-    <IntDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\.objects\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <TargetName>$(ProjectName).4.3.3</TargetName>
-    <OutDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\dll\</OutDir>
-    <IntDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\.objects\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDbg|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <TargetName>$(ProjectName).4.3.3</TargetName>
-    <OutDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\dll\</OutDir>
-    <IntDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\.objects\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <LinkIncremental>true</LinkIncremental>
-    <TargetName>$(ProjectName).4.3.3</TargetName>
-    <OutDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\dll\</OutDir>
-    <IntDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\.objects\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <LinkIncremental>true</LinkIncremental>
-    <TargetName>$(ProjectName).4.3.3</TargetName>
-    <OutDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\dll\</OutDir>
-    <IntDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\.objects\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDbg|ARM'">
     <LinkIncremental>true</LinkIncremental>
-    <TargetName>$(ProjectName).4.3.3</TargetName>
-    <OutDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\dll\</OutDir>
-    <IntDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\.objects\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDbg|ARM64'">
     <LinkIncremental>true</LinkIncremental>
-    <TargetName>$(ProjectName).4.3.3</TargetName>
-    <OutDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\dll\</OutDir>
-    <IntDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\.objects\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <TargetName>$(ProjectName).4.3.3</TargetName>
-    <OutDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\dll\</OutDir>
-    <IntDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\.objects\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <TargetName>$(ProjectName).4.3.3</TargetName>
-    <OutDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\dll\</OutDir>
-    <IntDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\.objects\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <LinkIncremental>false</LinkIncremental>
-    <TargetName>$(ProjectName).4.3.3</TargetName>
-    <OutDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\dll\</OutDir>
-    <IntDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\.objects\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <LinkIncremental>false</LinkIncremental>
-    <TargetName>$(ProjectName).4.3.3</TargetName>
-    <OutDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\dll\</OutDir>
-    <IntDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\.objects\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -312,7 +240,6 @@
       <AdditionalDependencies>Iphlpapi.lib;Ws2_32.lib;Advapi32.lib</AdditionalDependencies>
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
-      <ImportLibrary>$(OutDir)..\lib\$(ProjectName).lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDbg|Win32'">
@@ -332,7 +259,6 @@
       <AdditionalDependencies>Iphlpapi.lib;Ws2_32.lib;Advapi32.lib</AdditionalDependencies>
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
-      <ImportLibrary>$(OutDir)..\lib\$(ProjectName).lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -352,7 +278,6 @@
       <AdditionalDependencies>Iphlpapi.lib;Ws2_32.lib;Advapi32.lib</AdditionalDependencies>
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
-      <ImportLibrary>$(OutDir)..\lib\$(ProjectName).lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDbg|x64'">
@@ -372,7 +297,6 @@
       <AdditionalDependencies>Iphlpapi.lib;Ws2_32.lib;Advapi32.lib</AdditionalDependencies>
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
-      <ImportLibrary>$(OutDir)..\lib\$(ProjectName).lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
@@ -392,7 +316,6 @@
       <AdditionalDependencies>Iphlpapi.lib;Ws2_32.lib;Advapi32.lib</AdditionalDependencies>
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
-      <ImportLibrary>$(OutDir)..\lib\$(ProjectName).lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
@@ -412,7 +335,6 @@
       <AdditionalDependencies>Iphlpapi.lib;Ws2_32.lib;Advapi32.lib</AdditionalDependencies>
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
-      <ImportLibrary>$(OutDir)..\lib\$(ProjectName).lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDbg|ARM'">
@@ -432,7 +354,6 @@
       <AdditionalDependencies>Iphlpapi.lib;Ws2_32.lib;Advapi32.lib</AdditionalDependencies>
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
-      <ImportLibrary>$(OutDir)..\lib\$(ProjectName).lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDbg|ARM64'">
@@ -452,7 +373,6 @@
       <AdditionalDependencies>Iphlpapi.lib;Ws2_32.lib;Advapi32.lib</AdditionalDependencies>
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
-      <ImportLibrary>$(OutDir)..\lib\$(ProjectName).lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -476,7 +396,6 @@
       <AdditionalDependencies>Iphlpapi.lib;Ws2_32.lib;Advapi32.lib</AdditionalDependencies>
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
-      <ImportLibrary>$(OutDir)..\lib\$(ProjectName).lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -500,7 +419,6 @@
       <AdditionalDependencies>Iphlpapi.lib;Ws2_32.lib;Advapi32.lib</AdditionalDependencies>
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
-      <ImportLibrary>$(OutDir)..\lib\$(ProjectName).lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
@@ -524,7 +442,6 @@
       <AdditionalDependencies>Iphlpapi.lib;Ws2_32.lib;Advapi32.lib</AdditionalDependencies>
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
-      <ImportLibrary>$(OutDir)..\lib\$(ProjectName).lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
@@ -548,7 +465,6 @@
       <AdditionalDependencies>Iphlpapi.lib;Ws2_32.lib;Advapi32.lib</AdditionalDependencies>
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
-      <ImportLibrary>$(OutDir)..\lib\$(ProjectName).lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <LibZmqVersion>3.2.0</LibZmqVersion>
+    <LibZmqConfigurationExtension Condition="'$(Configuration)'=='Debug'">d</LibZmqConfigurationExtension>
+    <LibZmqConfigurationExtension Condition="'$(Configuration)'=='Release'">r</LibZmqConfigurationExtension>
+    <LibZmqFullVersion>$(LibZmqVersion)-$(PlatformTarget)-e$(LibZmqConfigurationExtension)</LibZmqFullVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IntDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\$(Configuration)\.objects\$(ProjectName)\</IntDir>
+    <SourcePath>$(UDOOCSROOT)\dev\src\clientlib\pktrclntlib;$(UDOOCSROOT)\dev\src\clientlib;$(SourcePath)</SourcePath>
+    <OutDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\$(Configuration)\dll\</OutDir>
+    <TargetName>$(ProjectName).$(LibZmqFullVersion)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <PreBuildEvent>
+      <Command>::..\..\..\util\set_windows_target_platform.exe $(ProjectPath) $(WinTargetPlatformVersion)</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(UDOOCSROOT)\dev\src\clientlib;$(UDOOCSROOT)\dev\src\clientlib\pktrclntlib;$(UDOOCSROOT)\dev\include\wlac;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DOOCS_VERSION="$(DoocsVersion)"</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(UDOOCSROOT)\dev\arch\$(PROCESSOR_ARCHITECTURE)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DOOCSapi.lib;wlac.lib</AdditionalDependencies>
+      <ImportLibrary>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\$(Configuration)\lib\$(ProjectName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="LibZmqVersion">
+      <Value>$(LibZmqVersion)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="LibZmqFullVersion">
+      <Value>$(LibZmqFullVersion)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
