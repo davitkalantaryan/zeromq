@@ -9,9 +9,9 @@
     <ZmqLibraryName>zmq.$(LibZmqFullVersion)</ZmqLibraryName>
   </PropertyGroup>
   <PropertyGroup>
-    <IntDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\$(Configuration)\.objects\$(ProjectName)\</IntDir>
+    <IntDir>$(ZmqVirtProjectDir)..\..\..\sys\win_$(PlatformTarget)\$(Configuration)\.objects\$(ProjectName)\</IntDir>
     <SourcePath>$(UDOOCSROOT)\dev\src\clientlib\pktrclntlib;$(UDOOCSROOT)\dev\src\clientlib;$(SourcePath)</SourcePath>
-    <OutDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\$(Configuration)\dll\</OutDir>
+    <OutDir>$(ZmqVirtProjectDir)..\..\..\sys\win_$(PlatformTarget)\$(Configuration)\dll\</OutDir>
     <TargetName>$(ZmqLibraryName)</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup>
