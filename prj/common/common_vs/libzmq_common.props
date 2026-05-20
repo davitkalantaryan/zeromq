@@ -9,9 +9,9 @@
     <ZmqLibraryName>zmq.$(LibZmqFullVersion)</ZmqLibraryName>
   </PropertyGroup>
   <PropertyGroup>
-    <IntDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\$(Configuration)\.objects\$(ProjectName)\</IntDir>
+    <IntDir>$(ZmqVirtProjectDir)..\..\..\sys\win_$(PlatformTarget)\$(Configuration)\.objects\$(ProjectName)\</IntDir>
     <SourcePath>$(UDOOCSROOT)\dev\src\clientlib\pktrclntlib;$(UDOOCSROOT)\dev\src\clientlib;$(SourcePath)</SourcePath>
-    <OutDir>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\$(Configuration)\dll\</OutDir>
+    <OutDir>$(ZmqVirtProjectDir)..\..\..\sys\win_$(PlatformTarget)\$(Configuration)\dll\</OutDir>
     <TargetName>$(ZmqLibraryName)</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup>
@@ -19,12 +19,12 @@
       <Command>::..\..\..\util\set_windows_target_platform.exe $(ProjectPath) $(WinTargetPlatformVersion)</Command>
     </PreBuildEvent>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(UDOOCSROOT)\dev\src\clientlib;$(UDOOCSROOT)\dev\src\clientlib\pktrclntlib;$(UDOOCSROOT)\dev\include\wlac;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)..\..\..\contrib\libzmq\include;$(MSBuildThisFileDirectory)..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>ZMQ_LIBRARY_NAME="$(ZmqLibraryName).dll"</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>$(UDOOCSROOT)\dev\arch\$(PROCESSOR_ARCHITECTURE)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>DOOCSapi.lib;wlac.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(MSBuildThisFileDirectory)..\..\..\sys\win_$(PlatformTarget)\$(Configuration)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
       <ImportLibrary>$(ProjectDir)..\..\..\sys\win_$(PlatformTarget)\$(Configuration)\lib\$(ProjectName).lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
